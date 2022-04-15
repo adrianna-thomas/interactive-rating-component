@@ -86,7 +86,10 @@
      transition: all .5s ease-in;
  }
  /*Active State*/
- 
+ .rating-btn:focus {
+    background-color: var(--Light-Grey);
+    color: white;
+}
  .rating-btn:active {
      background-color: var(--Light-Grey);
      color: white;
