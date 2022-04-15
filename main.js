@@ -1,21 +1,25 @@
-const numberButtons = document.querySelectorAll(".rating-btn");
+const ratingButtons = document.querySelectorAll(".rating-btn");
 const submitRatingBtn = document.getElementById("sumbitRatingBtn");
 const ratingCard = document.getElementById("ratingCard");
 const feedbackCard = document.getElementById("feedbackCard");
 const numberRating = document.getElementById("numberRating");
-let selectedRating = null;
+let selectedRating = "";
 
-function handleClickNumberBtn({ target }) {
+
+
+function clickRatingBtn({ target }) {
     removeAllActiveClass();
     target.classList.add("active");
     selectedRating = target.value;
 }
 
+
 function removeAllActiveClass() {
-    numberButtons.forEach((button) => button.classList.remove("active"));
+    ratingButtons.forEach((button) => button.classList.remove("active"));
 }
 
-function handleRatingSubmit() {
+
+function ratingSubmit() {
     if (!selectedRating) {
         return alert("Please select number rating!");
     }
@@ -24,7 +28,8 @@ function handleRatingSubmit() {
     feedbackCard.classList.remove("hidden");
     ratingCard.classList.add("hidden");
 }
-numberButtons.forEach((button) => {
-    button.addEventListener("click", handleClickNumberBtn);
+
+ratingButtons.forEach((button) => {
+    button.addEventListener("click", clickRatingBtn);
 });
-submitRatingBtn.addEventListener("click", handleRatingSubmit);
+submitRatingBtn.addEventListener("click", ratingSubmit);
