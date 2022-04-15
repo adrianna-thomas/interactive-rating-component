@@ -1,5 +1,5 @@
 const numberButtons = document.querySelectorAll(".rating-btn");
-const submitRatingBtn = document.getElementById("numberRating");
+const submitRatingBtn = document.getElementById("sumbitRatingBtn");
 const ratingCard = document.getElementById("ratingCard");
 const feedbackCard = document.getElementById("feedbackCard");
 const numberRating = document.getElementById("numberRating");
@@ -20,10 +20,9 @@ function handleRatingSubmit() {
         return alert("Please select number rating!");
     }
 
-
     numberRating.textContent = selectedRating;
     feedbackCard.classList.remove("hidden");
-    initialCard.classList.add("hidden");
+    ratingCard.classList.add("hidden");
 }
 numberButtons.forEach((button) => {
     button.addEventListener("click", handleClickNumberBtn);
