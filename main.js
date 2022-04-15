@@ -1,5 +1,5 @@
 const ratingButtons = document.querySelectorAll(".rating-btn");
-const submitRatingBtn = document.getElementById("sumbitRatingBtn");
+const submitRatingBtn = document.getElementById("submitRatingBtn");
 const ratingCard = document.getElementById("ratingCard");
 const feedbackCard = document.getElementById("feedbackCard");
 const numberRating = document.getElementById("numberRating");
