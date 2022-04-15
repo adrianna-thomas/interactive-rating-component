@@ -31,6 +31,7 @@
      background-color: var(--Dark-Blue);
      max-width: 18rem;
      border-radius: 15px;
+     padding: 1rem;
  }
  
  .star {
@@ -95,10 +96,6 @@
      margin-bottom: 1rem;
  }
  
- .card-container {
-     padding: 1rem;
- }
- 
  .card-body {
      margin-top: 1.5rem;
      margin-bottom: 1rem;
@@ -123,12 +120,12 @@
      border-radius: 20px;
      color: var(--Orange);
      max-width: 12rem;
-     margin-left: 4rem;
+     margin-left: 2rem;
      margin-bottom: 1rem;
  }
  
  .card-2 {
-     padding: rem;
+     text-align: center;
  }
  
  .card-2 h2 {
