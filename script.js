@@ -3,7 +3,7 @@ const submitRatingBtn = document.getElementById("submitRatingBtn");
 const ratingCard = document.getElementById("ratingCard");
 const feedbackCard = document.getElementById("feedbackCard");
 const numberRating = document.getElementById("numberRating");
-let selectedRating = null;
+let selectedRating = "";
 
 
 
