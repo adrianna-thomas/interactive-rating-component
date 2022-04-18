@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Site](https://www.frontendmentor.io/solutions/interactive-rating-component-SJQhT-oNc)
 - Live Site URL: [Github Page](https://adrianna-thomas.github.io/interactive-rating-component/)
 
 ## My process
