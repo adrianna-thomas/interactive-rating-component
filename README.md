@@ -30,6 +30,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+![](./screenshot.jpg)
 
 ### Links
 
@@ -48,34 +49,88 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learned how to link my Javascript to my HTML.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<script src="./script.js" defer></script>
+```
+
+I learned how to hide the result card.
+
+```html
+<div id="feedbackCard" class="card card-2 hidden"></div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.hidden {
+  display: none;
 }
 ```
 
+---
+
+I learned how to apply a background effect to an image.
+
+```html
+<img class="star" src="./images/icon-star.svg" alt="star" />
+```
+
+```css
+.star {
+  background-color: var(--Medium-Grey-bg);
+  border-radius: 50%;
+  padding: 0.85rem;
+  max-width: 100%;
+  display: block;
+}
+```
+
+---
+
+I learned how to make a function that changes the class of the selected button to display a different css style. And gets the value for the placeholder in the html code for the result of the selected rating.
+
+```html
+<p class="rating-result">You selected <span id="numberRating"></span> out of 5</p>
+```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+function clickRatingBtn({ target }) {
+  removeAllActiveClass();
+  target.classList.add("active");
+  selectedRating = target.value;
+}
+```
+
+```css
+.rating-btn.active {
+  background-color: var(--Light-Grey);
+  color: white;
+}
+```
+
+---
+
+I learned how to create a function that displays an alert if no rating is selected. It also changes what component is dispayed by adding and removing classes to the html.
+
+```js
+function ratingSubmit() {
+  if (!selectedRating) {
+    return alert("Please select number rating!");
+  }
+
+  numberRating.textContent = selectedRating;
+  feedbackCard.classList.remove("hidden");
+  ratingCard.classList.add("hidden");
+}
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Getting more comfortable using Javascript.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Pixels to Rem Converter](https://www.ninjaunits.com/converters/pixels/pixels-rem/) - This helped me with deciding which rem values to apply to my stylesheet.
 
 ## Author
 
@@ -83,5 +138,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-https://github.com/indraAK/Interactive-rating-component
+1. Rhode N'Komba: [LinkedIn](https://www.linkedin.com/in/rhode-n-komba-3b028a233/) - Helped me with troubleshooting why my Javascript wasn't connecting to my HTML.
+
+2. IndraAk [Github](https://github.com/indraAK/Interactive-rating-component) - Helped me understand how to approach the Javascript portion of the project.

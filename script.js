@@ -31,5 +31,6 @@ function ratingSubmit() {
 
 ratingButtons.forEach((button) => {
     button.addEventListener("click", clickRatingBtn);
+
+    submitRatingBtn.addEventListener("click", ratingSubmit);
 });
-submitRatingBtn.addEventListener("click", ratingSubmit);
