@@ -29,13 +29,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![](images/mobile-screenshot.png)
+![](images/mobile-screenshot-submitted.png)
+![](images/desktop-screenshot.png)
+![](images/desktop-screenshot-submitted.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github Page](https://adrianna-thomas.github.io/interactive-rating-component/)
 
 ## My process
 
